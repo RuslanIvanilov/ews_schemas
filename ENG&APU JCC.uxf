@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <help_text>// Uncomment the following line to change the fontsize and font:
+// fontsize=14
+// fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
+
+</help_text>
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>60</y>
+      <w>144</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>ENGINE SHOP MANUAL (ESM)
+Aircraft Maintenance Manual (AMM)
+Standart Practis Manual (SPM)
+--
+SEE ENG&amp;APU MD
+--
+bg=red
+MD Title  - varchar()
+MD P/N  - varchar(32)
+MD Revision - Number
+MD Revision Date - Tamestamp </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>192</x>
+      <y>348</y>
+      <w>234</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes> Пример карты TASK 7B-72-31-01-200-001-AFL
+bg=green
+--
+Engine/APU Type - varchar(32)
+(CFM56-3;CFM56-5B; CFM56-7B;
+Model  131-9[A]; Model  131-9[B]; Model RE220[RJ]) 
+Engine/APU P/N  - varchar(32)
+Engine/APU Serial Number - varchar(32)
+--
+TASK/EMJS/EMJO Name + Customer ID - varchar(64)
+Пример EMJS 7B-72-00 - AFL, где AFL это ID
+Job description - varchar(512)
+EMJS/EMJO Revision - varchar(8)
+EMJS/EMJO Date of revision - Time Stamp (autoincriment)
+Issued by - varchar(255) (autoincriment)
+--
+Best practice - varchar(MAX)
+EMJS/EMJO customer Name (ID) - varchar(32)
+--
+Needed personal - Number
+Personal Skill - (EMS/APU/Cleaner/Inspector)
+Planned Hours - Number
+Job Price - Number * Возможность ежегодной индексации.
+--
+MJSS # - varchar(64) 
+ссылки на документацию, ниже список документации
+MD Sequence Number - Number (autoincriment)
+MD Title  - varchar(8)
+MD P/N  - varchar(32)
+MD Revision - Number
+MD Revision Date - Tamestamp </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>282</x>
+      <y>186</y>
+      <w>66</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>SUBTASK
+--
+Subtask 1
+Subtask 2
+Subtask 3
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>198</x>
+      <y>750</y>
+      <w>216</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Special Tools
+--
+Sequence Number in package - Number (autoincriment)
+P/N Tool - varchar(32) *LINK*
+Tool Modification - varchar(32)
+Description - varchar(255)
+Actual Loc. - varchar(32)
+Qty req - Number
+Status
+Status Reference - varchar(128)
+Marking - varchar(32)
+??? Availability on Shops - varchar(8)
+Applicable Tests - varchar(255)
+Expiration date - tamestamp
+Test date - tamestamp
+Test date type - varchar(8)
+Test Period - Number
+TOOL Tree - Link to P/N included on a Kit</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>654</x>
+      <y>750</y>
+      <w>216</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Expendable Parts
+--
+Sequence Number in package - Number (autoincriment)
+PART NUMBER (P/N)  - varchar(32)
+PART Name  - varchar(64)
+PART Quantity   - number
+Replace Requirement -  (M/C)
+Additional INFO   - varchar(512)
+--
+*LINK*
+--
+IPC - varchar(64)
+Alternate P/N  - varchar(64)
+SB's - varchar(64)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>426</x>
+      <y>750</y>
+      <w>216</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>Standard Tools
+--
+Sequence Number in package - Number (autoincriment)
+P/N Tool - varchar(32)
+Description - varchar(255)
+Actual Loc. - varchar(32)
+Qty req - Number
+Marking - varchar(32)
+??? Availability on Shops - varchar(8)
+Applicable Tests - varchar(255)
+Expiration date - Tamestamp
+Test date - Tamestamp
+Test date type - varchar(8)
+Test Period - Number 
+TOOL Tree - Link to P/N included on a Kit</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>894</x>
+      <y>750</y>
+      <w>216</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>Consumable Materials
+--
+Sequence Number in package - Number (autoincriment)
+Manufacturer P/N  - varchar(64) *LINK*
+Product P/N - varchar(64)
+PART Name  - varchar(64)
+Qty. Req. - Number
+Unit of measure - Number
+AMOS P/N - varchar(64)
+additional INFO   - varchar(512)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>6</x>
+      <y>738</y>
+      <w>144</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>ILLUSTRATED TOOL 
+AND EQUIPMENT MANUAL (ITEM)
+--
+bg=red
+P/N Tool - varchar(32
+Tool version - varchar(16)
+Description - varchar(255)
+Recommendation - varchar(16)
+Effectivity - varchar(255)
+Comment - varchar(255)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>150</x>
+      <y>966</y>
+      <w>120</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Status
+--
+Mandatory
+As alternate use
+Optional
+Optional/As alternate use
+Cancaled/As alternate use
+NEED to ORDER
+EXpected Delivery Date</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>162</x>
+      <y>822</y>
+      <w>48</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;240.0;10.0;10.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>276</x>
+      <y>606</y>
+      <w>456</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0;740.0;140.0;740.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>606</y>
+      <w>672</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0;1100.0;110.0;1100.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>24</x>
+      <y>240</y>
+      <w>126</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>Associated 
+SERVICE BULLETINS (SB)
+--
+bg=red
+SB Number- varchar(32) 
+SB Rev.- number 
+SB Date - date 
+??? Associated P/N varchar(32) </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>900</x>
+      <y>972</y>
+      <w>222</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>CONSUMABLE PRODUCTS MANUAL
+--
+bg=red
+CHEMICAL PRODUCT Number - varchar(32)
+SPECIFICATION REQUIREMENT Number - varchar(32)
+DESCRIPTION- varchar(255)
+TRADE NAME - varchar(32)
+SUPPLIER’S CODE  - varchar(16)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>666</x>
+      <y>972</y>
+      <w>150</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>ENGINE ILLUSTRATED 
+PART CATALOG (EIPC)
+--
+bg=red
+PART NUMBER (P/N)  - varchar(32)
+PART Name  - varchar(64)
+PART Quantity   - number
+additional INFO   - varchar(512)
+??? CAGE CODE   - varchar(8)
+
+FIG.  - varchar(8)
+ITEM   - varchar(8)
+
+
+???Parent Assy - </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>666</x>
+      <y>1104</y>
+      <w>126</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>PART CATALOG ITEM ???
+--
+PART Alternate.
+FIG.  - varchar(8)
+ITEM   - varchar(8)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>738</x>
+      <y>1080</y>
+      <w>18</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>366</x>
+      <y>294</y>
+      <w>30</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>258</y>
+      <w>216</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes> Job Card Creation
+--
+bg=green
+Модуль который позволяет создавать рабочие карты
+по заранее созданным шаблонам оформления</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>552</x>
+      <y>198</y>
+      <w>126</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>Maintenance Preparation 
+Check List (MPCL)
+--
+bg=green
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>864</x>
+      <y>114</y>
+      <w>246</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>WORK PACKAGE
+--
+WORK Package Title - varchar(255)
+Sequence Number in package - Number (autoincriment)
+Job Type - (Mandatory/Optional)
+TASK/EMJS/EMJO Name - varchar(64)
+Job description - varchar(255)
+EMJS/EMJO revision - varchar(8)
+EMJS/EMJO Date of revision - Time Stamp (autoincriment)
+Actual Status - (Revise/Good) (Date of revision: autoincriment)
+Presence Aircraft MD  - (YES/NO это пустое поле)
+EMJS/EMJO customer Name - varchar(32) (Read Customer ID)
+--
+Work type (Mandatory/Optional) (выбор человку)
+--
+TASK он остается как есть, но в 
+MJSS система меняет его на свободный номер NRC.
+Номер- NRC#:CMXXXX-1
+где CMXXXX это номер созданный АМОС. </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>294</y>
+      <w>90</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Job Type
+--
+ Mandatory/Optional</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>792</x>
+      <y>318</y>
+      <w>30</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>216</x>
+      <y>120</y>
+      <w>66</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>372</x>
+      <y>186</y>
+      <w>96</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>EFFECT
+--
+list of Engine/APU P/N's</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>162</x>
+      <y>186</y>
+      <w>114</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>SERVICE BULLETINS (SB)
+--
+PRE SB
+POST SB
+SB</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>306</x>
+      <y>156</y>
+      <w>30</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>120</y>
+      <w>42</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>30.0;110.0;30.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>132</x>
+      <y>204</y>
+      <w>42</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>756</x>
+      <y>864</y>
+      <w>18</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>246</x>
+      <y>1080</y>
+      <w>294</w>
+      <h>516</h>
+    </coordinates>
+    <panel_attributes>Part Creation (PC)
+bg=green
+--
+ОСНОВНЫЕ данные подгружаются с Амоса
+при необходимости добавляются доп данные
+--
+PART Name - varchar(512)
+PART NUMBER (P/N)  - varchar(64)
+SERIAL NUMBER (S/N) - varchar(64) Его может и не быть
+Marking - varchar(64)
+MATERIAL TYPE  - (TOOL/PART)
+CLASS OF MATERIAL - Consumable/Expendable/
+ROTABLE - (YES/NO)
+REPAIRABLE - (YES/NO)
+PMA - (YES/NO) 
+Unit of measure - Number
+PART.... - LLP/ NOT LLP/ CRITICAL PART
+PART... - QEC&amp;LRU/
+Specification
+WEIGHT - KG/LB
+Unit of measure - Number
+
+
+--
+Требования по хранению
+Time  REQUIREMENTS - experation date
+Temperature  REQUIREMENTS
+Humidity REQUIREMENTS
+Рассылка о подходе срока годности.
+
+--
+Финансовый блок
+Закупочная цена - $
+Link To CLP (Price Catalog)
+
+--
+ВСПОМОГАТЕЛЬНЫЕ
+--
+AMOS RDN - varchar(64) УНИКАЛЬНЫЙ НОМЕР ВХОДЯЩИЙ НОМЕР
+AMOS P/N - varchar(64)
+AMOS Name - varchar(255)
+Component IPC P/N - varchar(64)
+Component IPC Name - varchar(512)
+Aircraft IPC P/N - varchar(64)
+Alternate IPC P/N   - varchar(512)
+Alternate IPC Name  - varchar(512)
+CHAPTER OF ATA - 72-00
+SB's - varchar(64)
+TIME/CYCLE/TESTS COUNTER
+
+
+PART Quantity   - number
+Replace Requirement -  (M/C)
+Additional INFO   - varchar(512)
+--
+*LINK*
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>564</x>
+      <y>1194</y>
+      <w>300</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>IF LLP OR CRITICAL PART
+--
+ВСЕ ПОЛЯ ОБЯЗАТЕЛЬНЫ ДЛЯ ЗАПОЛНЕНИЯ
+TIME SENSE NEW - varchar(16)- ЕСЛИ ЕСТЬ ДАННЫЕ
+CYCLE SENSE YEW - varchar(16)
+CONDITION - REPAIRED/INSPECTED-TESTED/OVERHAULED - varchar(64)
+Repair QTY - (New/First Run/ Second Run/)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>564</x>
+      <y>1302</y>
+      <w>132</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>IF TOOL
+--
+Applicable Tests - varchar(255)
+Expiration date - tamestamp
+Test date - tamestamp
+Test date type - varchar(8)
+Test Period - Number 
+TOOL Tree - Link to P/N included on a Kit</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>804</x>
+      <y>276</y>
+      <w>174</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;50.0;270.0;50.0;270.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>168</y>
+      <w>84</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>WORK PACKAGE
+--
+Hospital Repair</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>228</y>
+      <w>84</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>WORK PACKAGE
+--
+Overhaul</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>234</y>
+      <w>30</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>234</y>
+      <w>72</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>100.0;30.0;10.0;30.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>780</x>
+      <y>192</y>
+      <w>96</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>228</y>
+      <w>18</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>228</y>
+      <w>18</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>462</x>
+      <y>384</y>
+      <w>222</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Maintenance Documentation
+Control List (MDCL)
+--
+bg=green
+Хранит шаблоны карт, служит инструментом согласовывания.
+отслеживает их выпуск и ревизии карт
+--
+TASK/EMJS/EMJO Name + Customer ID - varchar(64)
+Пример EMJS 72-00 - AFL, где AFL это ID
+Job description - varchar(512)
+EMJS/EMJO revision - varchar(8)
+EMJS/EMJODate of revision - Time Stamp (autoincriment)
+Issued by - varchar(255) (autoincriment)
+Checked by - varchar(255) (autoincriment)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>420</x>
+      <y>540</y>
+      <w>96</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>252</x>
+      <y>606</y>
+      <w>300</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0;480.0;170.0;480.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>996</x>
+      <y>858</y>
+      <w>18</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;190.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>216</x>
+      <y>228</y>
+      <w>66</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>90.0;80.0;10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>780</x>
+      <y>210</y>
+      <w>96</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>768</x>
+      <y>348</y>
+      <w>72</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Task Check list
+--
+EMJC #1
+EMJC #2
+EMJC #3
+...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1002</x>
+      <y>348</y>
+      <w>240</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>MAINTENANCE JOB 
+SUMMARY SHEET (MJSS)
+bg=green
+--
+MJSS # - varchar(64) номер подтягивается из амоса
+MJSS Work Name - varchar(512) (autoincriment)
+Engine/APU Type - varchar(32)
+(CFM56-3;CFM56-5B; CFM56-7B;
+Model  131-9[A]; Model  131-9[B]; Model RE220[RJ]) 
+Engine/APU P/N  - varchar(32)
+Engine/APU Serial Number - varchar(32)
+Station - varchar(16)
+Issued by - varchar(255) (autoincriment)
+Customer ID - varchar(64)
+WO#/Contract# - varchar(64)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>834</x>
+      <y>372</y>
+      <w>78</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>90.0;90.0;90.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>606</y>
+      <w>18</w>
+      <h>156</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>144</x>
+      <y>774</y>
+      <w>66</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>168</y>
+      <w>72</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>528</x>
+      <y>84</y>
+      <w>168</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>ENGINE/APU WORKSCOPE (WS)
+--
+bg=green
+SEE ENG&amp;APU WS</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>120</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>186</x>
+      <y>732</y>
+      <w>936</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>SimpleClass</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>408</x>
+      <y>942</y>
+      <w>18</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;230.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>534</x>
+      <y>1212</y>
+      <w>42</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>534</x>
+      <y>1320</y>
+      <w>42</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>6</x>
+      <y>42</y>
+      <w>144</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>Все что связанно с документацией
+bg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>6</x>
+      <y>66</y>
+      <w>144</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>Наши разрабатываемые модули
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>6</x>
+      <y>96</y>
+      <w>144</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>описание сущностей и их движение</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>168</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Легенда</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>528</y>
+      <w>156</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>bg=green
+проверка и согласование работы 
+с выше стоящим
+--
+-Отправка на почту уведомления
+-Возможность отослать на доработку</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>558</x>
+      <y>498</y>
+      <w>30</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>426</y>
+      <w>156</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Проверка актуальности ревизии карт
+с учетом работ с присутствием АММ
+--
+EMJC #1
+EMJC #2
+EMJC #3
+...</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>678</x>
+      <y>444</y>
+      <w>90</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>906</x>
+      <y>444</y>
+      <w>108</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

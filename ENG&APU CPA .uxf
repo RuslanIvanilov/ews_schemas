@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>738</x>
+      <y>189</y>
+      <w>144</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>History of Repairs
+--
++APU
+-----
+ -APU #1
+ -APU #2
+ -APU #3
+--
++ENGINE
+------
+ -ESN #1
+ -ESN #2
+ -ESN #3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>9</y>
+      <w>441</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>Customers_Personal Account (CPA)
+bg=green
+--
+Данные о заказчеке, требуются для создания учетной записи и 
+формирования цифровой подписи, для одобрения документов.
+--
+Customer ID - varchar(64) - название Авиакомпании
+Customer Name - varchar(64) - персональное имя заказчика для входа
+Customer Pass - varchar(64)  - пароль для входа
+Customer E-mail - varchar(64) - почта для оповещения 
+Customer mobile - Number - персоняльный телефон для связи
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>189</y>
+      <w>441</w>
+      <h>243</h>
+    </coordinates>
+    <panel_attributes>Request for new Repair
+--
+Specify Based Data
+--
+Engine/APU P/N  - varchar(32) *LINK*
+Engine/APU Serial Number - varchar(32)
+Engine TSN: -  (_Hours : _Minutes)
+Engine CSN: - Number
+Oil Brand - varchar(32)*LINK*
+General Engine Workscope requested - varchar(1024)
+
+Expected Maintenance Start Date: (DD.MM.YY)  - TimeStamp
+Expected Maintenance Completion Date: (DD.MM.YY)  - TimeStamp
+REQUIRED CERTIFICATE: - (EASA FORM 1 / FAA 8130-3/Dual Realease)
+
+ Aircraft Reg.#: - varchar(16)
+ Aircraft MSN: - varchar(16)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>522</x>
+      <y>585</y>
+      <w>270</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>if Workscope Lavel - Hospital Repair 
+--
+Choose Repair Type - (In Shop / On Wing)
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>234</x>
+      <y>585</y>
+      <w>243</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>if Workscope Lavel - Overhaul
+--
+Engine TSO: - (_Hours : _Minutes)
+Engine CSO: - Number
+
+???Engine TSLSV - (_Hours : _Minutes)
+???Engine CSLSV: - Number
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>522</x>
+      <y>810</y>
+      <w>441</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>if Workscope Type - On Wing
+--
+Aircraft location: - varchar(256)
+ENGINE POSITION ON - (LH/RH)
+Hangar available:  (YES / NO)
+Overhead-traveling crane available: - (YES / NO)
+Pressurized dry air available: (YES / NO)
+Specify other additional on-wing maintenance: (if required): - varchar(1024)     
+
+Local contracted MRO contact point:
+Name: - varchar(64)
+Mobile : - Number
+E-mail: - varchar(64)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>522</x>
+      <y>720</y>
+      <w>243</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>if Workscope Type - In Shop
+--
+Reason for removal: - varchar(1024)
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>459</y>
+      <w>441</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Request for new Repair
+--
+Choose Workscope Workscope Lavel - (Hospital Repair/Overhaul)
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1044</x>
+      <y>81</y>
+      <w>279</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>ENGINE/APU WORKSCOPE (WS)
+bg=green
+--
+чтение/ ввод в пустые ячейки/ согласованеие
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1071</x>
+      <y>144</y>
+      <w>279</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>Table Inspection Report (TIR)
+bg=green
+--
+чтение/ ввод в пустые ячейки/ согласованеие
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1017</x>
+      <y>9</y>
+      <w>279</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>Component Catalog (CC)
+ (TIR)
+bg=green
+--
+чтение/
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1098</x>
+      <y>207</y>
+      <w>279</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>Production Control Board (PCB)
+bg=green
+--
+чтение/выставление замечаний
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1125</x>
+      <y>270</y>
+      <w>279</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>Shop Visit Report (SVR)
+bg=green
+--
+чтение/скачивание/выставление замечаний
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>468</x>
+      <y>144</y>
+      <w>45</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>963</x>
+      <y>90</y>
+      <w>90</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>963</x>
+      <y>270</y>
+      <w>180</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>180.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>963</x>
+      <y>144</y>
+      <w>126</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>963</x>
+      <y>207</y>
+      <w>153</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>684</x>
+      <y>45</y>
+      <w>306</w>
+      <h>387</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;410.0;320.0;410.0;320.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>684</x>
+      <y>72</y>
+      <w>144</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>120.0;130.0;120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>873</x>
+      <y>306</y>
+      <w>117</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>423</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>513</y>
+      <w>27</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>648</x>
+      <y>513</y>
+      <w>27</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>612</x>
+      <y>666</y>
+      <w>27</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>612</x>
+      <y>765</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>504</x>
+      <y>549</y>
+      <w>486</w>
+      <h>468</h>
+    </coordinates>
+    <panel_attributes>Only for Engines
+--
+bg=gray
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>189</x>
+      <y>549</y>
+      <w>297</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>For Engine &amp; APU
+--
+bg=gray
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>684</x>
+      <y>9</y>
+      <w>351</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>370.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>963</x>
+      <y>45</y>
+      <w>72</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

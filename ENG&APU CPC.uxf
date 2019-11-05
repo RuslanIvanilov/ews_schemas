@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>250</x>
+      <y>90</y>
+      <w>380</w>
+      <h>410</h>
+    </coordinates>
+    <panel_attributes> Пример карты TASK 7B-72-31-01-200-001-AFL
+bg=green
+--
+Engine/APU Type - varchar(32)
+(CFM56-3;CFM56-5B; CFM56-7B;
+Model  131-9[A]; Model  131-9[B]; Model RE220[RJ]) 
+Engine/APU P/N  - varchar(32)
+Engine/APU Serial Number - varchar(32)
+--
+TASK/EMJS/EMJO Name + Customer ID - varchar(64)
+Пример EMJS 7B-72-00 - AFL, где AFL это ID
+Job description - varchar(512)
+EMJS/EMJO Revision - varchar(8)
+EMJS/EMJO Date of revision - Time Stamp (autoincriment)
+Issued by - varchar(255) (autoincriment)
+--
+Best practice - varchar(MAX)
+EMJS/EMJO customer Name (ID) - varchar(32)
+--
+Needed personal - Number
+Planned Hours - Number
+Job Price - Number * Возможность ежегодной индексации.
+--
+MJSS # - varchar(64) 
+ссылки на документацию, ниже список документации
+MD Sequence Number - Number (autoincriment)
+MD Title  - varchar(8)
+MD P/N  - varchar(32)
+MD Revision - Number
+MD Revision Date - Tamestamp </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>120</y>
+      <w>300</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Опция ежегодной индексация работ:
+--
+TASK/EMJS/EMJO
+Component Price Catalog</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>/AbstractClass/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
