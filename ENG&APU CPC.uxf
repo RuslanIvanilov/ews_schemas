@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>250</x>
+      <x>260</x>
       <y>90</y>
       <w>380</w>
       <h>410</h>
@@ -44,7 +44,7 @@ MD Revision Date - Tamestamp </panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>720</x>
+      <x>730</x>
       <y>120</y>
       <w>300</w>
       <h>140</h>
@@ -58,13 +58,25 @@ Component Price Catalog</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>20</x>
+      <x>30</x>
       <y>20</y>
       <w>100</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>/AbstractClass/
 </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>370</x>
+      <y>0</y>
+      <w>270</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*Каталог цена на выполнение работ*
+style=wordwrap</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

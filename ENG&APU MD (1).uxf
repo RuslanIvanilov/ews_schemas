@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>6</zoom_level>
+  <zoom_level>7</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>618</x>
-      <y>204</y>
-      <w>126</w>
-      <h>54</h>
+      <x>749</x>
+      <y>273</y>
+      <w>147</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>TASK 72-31-01-200-001
 --
@@ -20,10 +20,10 @@ bg=green
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1164</x>
-      <y>336</y>
-      <w>192</w>
-      <h>84</h>
+      <x>1386</x>
+      <y>427</y>
+      <w>224</w>
+      <h>98</h>
     </coordinates>
     <panel_attributes>ILLUSTRATED TOOL 
 AND EQUIPMENT MANUAL (ITEM)
@@ -40,10 +40,10 @@ Comment - varchar(255)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1164</x>
-      <y>738</y>
-      <w>126</w>
-      <h>66</h>
+      <x>1386</x>
+      <y>896</y>
+      <w>147</w>
+      <h>77</h>
     </coordinates>
     <panel_attributes>Associated 
 SERVICE BULLETINS (SB)
@@ -58,10 +58,10 @@ SB Date - date
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1164</x>
-      <y>504</y>
-      <w>192</w>
-      <h>90</h>
+      <x>1386</x>
+      <y>623</y>
+      <w>224</w>
+      <h>105</h>
     </coordinates>
     <panel_attributes>CONSUMABLE PRODUCTS MANUAL
 --
@@ -76,10 +76,10 @@ SUPPLIER’S CODE  - varchar(16)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1164</x>
-      <y>612</y>
-      <w>192</w>
-      <h>114</h>
+      <x>1386</x>
+      <y>749</y>
+      <w>224</w>
+      <h>133</h>
     </coordinates>
     <panel_attributes>ENGINE ILLUSTRATED 
 PART CATALOG (EIPC)
@@ -101,10 +101,10 @@ ITEM   - varchar(8)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1164</x>
-      <y>822</y>
-      <w>126</w>
-      <h>78</h>
+      <x>1386</x>
+      <y>994</y>
+      <w>147</w>
+      <h>91</h>
     </coordinates>
     <panel_attributes>PART CATALOG ITEM
 --
@@ -116,10 +116,10 @@ ITEM   - varchar(8)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>324</x>
-      <y>126</y>
-      <w>126</w>
-      <h>42</h>
+      <x>406</x>
+      <y>182</y>
+      <w>147</w>
+      <h>49</h>
     </coordinates>
     <panel_attributes>Abreveature list
 --
@@ -129,10 +129,10 @@ Global (from ALL MD)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
-      <y>96</y>
-      <w>18</w>
-      <h>42</h>
+      <x>413</x>
+      <y>147</y>
+      <w>21</w>
+      <h>49</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
@@ -140,10 +140,10 @@ Global (from ALL MD)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1278</x>
-      <y>720</y>
-      <w>66</w>
-      <h>144</h>
+      <x>1519</x>
+      <y>875</y>
+      <w>77</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>90.0;10.0;90.0;220.0;10.0;220.0</additional_attributes>
@@ -151,10 +151,10 @@ Global (from ALL MD)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1182</x>
-      <y>114</y>
-      <w>150</w>
-      <h>42</h>
+      <x>1407</x>
+      <y>168</y>
+      <w>175</w>
+      <h>49</h>
     </coordinates>
     <panel_attributes>NON DESTRUCTIVE
 TEST MANUAL (NDTM)
@@ -166,10 +166,10 @@ bg=yellow
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1182</x>
-      <y>60</y>
-      <w>150</w>
-      <h>42</h>
+      <x>1407</x>
+      <y>105</y>
+      <w>175</w>
+      <h>49</h>
     </coordinates>
     <panel_attributes>TECHNICAL SUPPORTING
 PUBLICATION (TSP)
@@ -181,10 +181,10 @@ bg=yellow
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1182</x>
-      <y>162</y>
-      <w>150</w>
-      <h>42</h>
+      <x>1407</x>
+      <y>224</y>
+      <w>175</w>
+      <h>49</h>
     </coordinates>
     <panel_attributes>COMPONENT MAINTENANCE
  MANUAL (CMM)
@@ -196,10 +196,10 @@ bg=yellow
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1182</x>
-      <y>210</y>
-      <w>150</w>
-      <h>42</h>
+      <x>1407</x>
+      <y>280</y>
+      <w>175</w>
+      <h>49</h>
     </coordinates>
     <panel_attributes>LIFE LIMIT PUBLICATION (LLP)
 --
@@ -209,10 +209,10 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>672</x>
-      <y>78</y>
-      <w>30</w>
-      <h>138</h>
+      <x>812</x>
+      <y>126</y>
+      <w>35</w>
+      <h>161</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=0..n</panel_attributes>
@@ -221,10 +221,10 @@ m1=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>438</x>
-      <y>204</y>
-      <w>108</w>
-      <h>168</h>
+      <x>539</x>
+      <y>273</y>
+      <w>126</w>
+      <h>196</h>
     </coordinates>
     <panel_attributes>Type of Tasks
 --
@@ -248,10 +248,10 @@ Rework</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>552</x>
-      <y>30</y>
-      <w>60</w>
-      <h>18</h>
+      <x>672</x>
+      <y>70</y>
+      <w>70</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
@@ -259,10 +259,10 @@ Rework</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>246</x>
-      <y>390</y>
-      <w>216</w>
-      <h>894</h>
+      <x>315</x>
+      <y>490</y>
+      <w>252</w>
+      <h>1043</h>
     </coordinates>
     <panel_attributes>Task Clasificator
 --
@@ -361,10 +361,10 @@ XX-YY-ZZ-JJJ-000
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>252</x>
-      <y>204</y>
-      <w>126</w>
-      <h>114</h>
+      <x>322</x>
+      <y>273</y>
+      <w>147</w>
+      <h>133</h>
     </coordinates>
     <panel_attributes>Task Clasificator
 --
@@ -382,10 +382,10 @@ XX-YY-ZZ
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>402</x>
-      <y>0</y>
-      <w>156</w>
-      <h>102</h>
+      <x>497</x>
+      <y>35</y>
+      <w>182</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>Component (MD)
 bg=red
@@ -404,10 +404,10 @@ MD Revision Date - Tamestamp </panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>600</x>
-      <y>0</y>
-      <w>168</w>
-      <h>84</h>
+      <x>728</x>
+      <y>35</y>
+      <w>196</w>
+      <h>98</h>
     </coordinates>
     <panel_attributes>Maintenance (MD)
 bg=red
@@ -420,10 +420,10 @@ MD Revision Date - Tamestamp </panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>210</x>
-      <y>0</y>
-      <w>162</w>
-      <h>102</h>
+      <x>273</x>
+      <y>35</y>
+      <w>189</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>Aircraft (MD)
 bg=red
@@ -440,10 +440,10 @@ MD Revision Date - Tamestamp </panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>846</x>
-      <y>0</y>
-      <w>162</w>
-      <h>90</h>
+      <x>1015</x>
+      <y>35</y>
+      <w>189</w>
+      <h>105</h>
     </coordinates>
     <panel_attributes> Job Card Creation
 --
@@ -454,10 +454,10 @@ SEE ENG&amp;APU JCC</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>540</x>
-      <y>210</y>
-      <w>90</w>
-      <h>24</h>
+      <x>658</x>
+      <y>280</y>
+      <w>105</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=0..n</panel_attributes>
@@ -466,10 +466,10 @@ m1=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>372</x>
-      <y>204</y>
-      <w>78</w>
-      <h>24</h>
+      <x>462</x>
+      <y>273</y>
+      <w>91</w>
+      <h>28</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=0..n</panel_attributes>
@@ -478,10 +478,10 @@ m1=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>372</x>
-      <y>270</y>
-      <w>54</w>
-      <h>132</h>
+      <x>462</x>
+      <y>350</y>
+      <w>63</w>
+      <h>154</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=0..n</panel_attributes>
@@ -490,10 +490,10 @@ m1=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>618</x>
-      <y>414</y>
-      <w>186</w>
-      <h>48</h>
+      <x>721</x>
+      <y>595</y>
+      <w>217</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>EFFECT
 --
@@ -505,10 +505,10 @@ list#.. of Engine/APU P/N's - varchar (512)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>618</x>
-      <y>474</y>
-      <w>102</w>
-      <h>48</h>
+      <x>721</x>
+      <y>665</y>
+      <w>119</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>SUBTASK
 --
@@ -521,10 +521,10 @@ Subtask .... - varchar (64)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>618</x>
-      <y>342</y>
-      <w>186</w>
-      <h>54</h>
+      <x>721</x>
+      <y>511</y>
+      <w>217</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>SERVICE BULLETINS (SB)
 --
@@ -537,10 +537,10 @@ SB's #1 -  PRE SB/SB/POST SB - varchar (64)
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>408</x>
-      <y>96</y>
-      <w>18</w>
-      <h>42</h>
+      <x>504</x>
+      <y>147</y>
+      <w>21</w>
+      <h>49</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
@@ -548,10 +548,10 @@ SB's #1 -  PRE SB/SB/POST SB - varchar (64)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>870</x>
-      <y>336</y>
-      <w>216</w>
-      <h>72</h>
+      <x>1043</x>
+      <y>427</y>
+      <w>252</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>Special Tools
 --
@@ -565,10 +565,10 @@ Status - (Optional)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>870</x>
-      <y>432</y>
-      <w>216</w>
-      <h>54</h>
+      <x>1043</x>
+      <y>539</y>
+      <w>252</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>Standard/Locally Manufactured Tools
 --
@@ -580,10 +580,10 @@ Description - varchar(255)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>870</x>
-      <y>612</y>
-      <w>216</w>
-      <h>120</h>
+      <x>1043</x>
+      <y>749</y>
+      <w>252</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>Expendable Parts
 --
@@ -604,10 +604,10 @@ SB's - varchar(64)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>870</x>
-      <y>504</y>
-      <w>216</w>
-      <h>78</h>
+      <x>1043</x>
+      <y>623</y>
+      <w>252</w>
+      <h>91</h>
     </coordinates>
     <panel_attributes>Consumable Materials
 --
@@ -622,10 +622,10 @@ Product P/N - varchar(64)</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>672</x>
-      <y>252</y>
-      <w>30</w>
-      <h>60</h>
+      <x>812</x>
+      <y>329</y>
+      <w>35</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=0..n</panel_attributes>
@@ -634,10 +634,10 @@ m1=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>918</x>
-      <y>84</y>
-      <w>30</w>
-      <h>228</h>
+      <x>1099</x>
+      <y>133</y>
+      <w>35</w>
+      <h>266</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=0..n</panel_attributes>
@@ -646,10 +646,10 @@ m1=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1080</x>
-      <y>360</y>
-      <w>96</w>
-      <h>18</h>
+      <x>1288</x>
+      <y>455</y>
+      <w>112</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>140.0;10.0;10.0;10.0</additional_attributes>
@@ -657,10 +657,10 @@ m1=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1080</x>
-      <y>528</y>
-      <w>96</w>
-      <h>18</h>
+      <x>1288</x>
+      <y>651</y>
+      <w>112</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>140.0;10.0;10.0;10.0</additional_attributes>
@@ -668,10 +668,10 @@ m1=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1080</x>
-      <y>636</y>
-      <w>96</w>
-      <h>18</h>
+      <x>1288</x>
+      <y>777</y>
+      <w>112</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>140.0;10.0;10.0;10.0</additional_attributes>
@@ -679,21 +679,21 @@ m1=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1038</x>
-      <y>726</y>
-      <w>138</w>
-      <h>66</h>
+      <x>1239</x>
+      <y>882</y>
+      <w>154</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>210.0;90.0;10.0;90.0;10.0;10.0</additional_attributes>
+    <additional_attributes>200.0;40.0;10.0;40.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>582</x>
-      <y>318</y>
-      <w>252</w>
-      <h>234</h>
+      <x>707</x>
+      <y>476</y>
+      <w>294</w>
+      <h>273</h>
     </coordinates>
     <panel_attributes>SimpleClass</panel_attributes>
     <additional_attributes/>
@@ -701,22 +701,22 @@ m1=0..n</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>678</x>
-      <y>546</y>
-      <w>30</w>
-      <h>60</h>
+      <x>819</x>
+      <y>742</y>
+      <w>35</w>
+      <h>49</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 m1=0..n</panel_attributes>
-    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>588</x>
-      <y>594</y>
-      <w>252</w>
-      <h>102</h>
+      <x>714</x>
+      <y>777</y>
+      <w>294</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>На выходе получается
 --
@@ -734,10 +734,10 @@ SUBTASK 72-00-41-001-10
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>6</x>
-      <y>42</y>
-      <w>144</w>
-      <h>18</h>
+      <x>35</x>
+      <y>84</y>
+      <w>168</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>Все что связанно с документацией
 bg=red</panel_attributes>
@@ -746,10 +746,10 @@ bg=red</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>6</x>
-      <y>66</y>
-      <w>144</w>
-      <h>18</h>
+      <x>35</x>
+      <y>112</y>
+      <w>168</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>Наши разрабатываемые модули
 bg=green</panel_attributes>
@@ -758,10 +758,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>6</x>
-      <y>96</y>
-      <w>144</w>
-      <h>18</h>
+      <x>35</x>
+      <y>147</y>
+      <w>168</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>описание сущностей и их движение</panel_attributes>
     <additional_attributes/>
@@ -769,10 +769,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>0</y>
-      <w>168</w>
-      <h>150</h>
+      <x>28</x>
+      <y>35</y>
+      <w>196</w>
+      <h>175</h>
     </coordinates>
     <panel_attributes>Легенда</panel_attributes>
     <additional_attributes/>
@@ -780,25 +780,96 @@ bg=green</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>570</x>
-      <y>300</y>
-      <w>540</w>
-      <h>456</h>
+      <x>693</x>
+      <y>385</y>
+      <w>630</w>
+      <h>658</h>
     </coordinates>
-    <panel_attributes>Разборка на составные части
-bg=blue</panel_attributes>
+    <panel_attributes>Разборка на составные части подробное описание.
+bg=blue
+В идеале разложение sql и pdf автоматически. но если не возможно, то
+
+1) открываем источник MD и копируем (ctrl+с) циликом таск
+2) открываем наш модуль, и вставляем в него весь текст (ctrl+v)
+3) нажимаем кнопку separate</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>6</x>
-      <y>120</y>
-      <w>144</w>
-      <h>18</h>
+      <x>35</x>
+      <y>175</y>
+      <w>168</w>
+      <h>21</h>
     </coordinates>
     <panel_attributes>bg=yellow
 вспомогательные данные</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1043</x>
+      <y>924</y>
+      <w>252</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Associated P/N 
+P/N к которым применима данная работа
+--
+Sequence Number in package - Number (autoincriment)
+Associated P/N - varchar(32)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1246</x>
+      <y>875</y>
+      <w>364</w>
+      <h>245</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>500.0;10.0;500.0;330.0;10.0;330.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>714</x>
+      <y>903</y>
+      <w>294</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>далее выделяя один из блоков subtask/ система предлагает
+применить к нему один из 10-15 шаблонных блоков,
+который создаются заранее. после выбора блок фиксируется</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>924</x>
+      <y>273</y>
+      <w>140</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Модуль связывания списков
+P/N с названиями 
+bg=green
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>532</x>
+      <y>7</y>
+      <w>315</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>*Maintenence Data - Руководство по ремонту двигателей и ВСУ*
+style=wordwrap</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

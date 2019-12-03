@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>33</x>
+      <y>66</y>
+      <w>660</w>
+      <h>594</h>
+    </coordinates>
+    <panel_attributes>Work Flow Chart (WFC)
+bg=green
+--
+SEE ENG&amp;APU WFC
+Модуль созданный на по подобию Engine Module Viewer
+в ключает в себя MJSS
+----------------------
++ CFM56-7B      Список-&gt;Корзинка-&gt;двигатель
+    EMJC #00	
+ + EMJC #01	
+     NRC #1
+     NRC #2 
+    EMJC #02	
+ + EMJC #03
+    +NRC #1
+    +NRC #2
+    + и тд.
+    EMJC #00	 
+-----------------------------
+Список - перечень необходимого с количеством - заказ на перемещение к нам на склад
+Список можно дополнять позициями
+Корзинка (пустая)- передано складу на сбор необходимого
+Корзинка (Полная)- готово к подбору/принято на склад
+Деталь меняет цвет, если получено АТИ заказчика
+Двигатель - АТИ списанно на мотор с указанием количества. другим цветом
+если дельта отличается.
+----------------------------
+Маштабирование работы через комбинацию CTRL/ПКМ +колесико мыши
+Увеличение - спускаемся до пошаговой карты/NRC
+Уменьшение-  отдаляемся до плана двигателя дале до плана Шопа 
+с возможностью перейти на другой мотор.
+   </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>44</x>
+      <y>11</y>
+      <w>319</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>*Модуль выполнения работ производства*
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
